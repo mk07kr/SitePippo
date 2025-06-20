@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OUR GALLERY</title>
+<style>
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 7px 7px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+h2{
+  text-align: center;
+ color: deeppink;
+ text-decoration: underline;
+ font-size: 35px;
+ font-style: italic;
+}
+
+</style>
+<body>
+
+<h2>Our Love Gallery</h2>
+<div id="mySidenav" class="sidenav">
+  <a href="http://127.0.0.1:5500/website/front.html" target="_blank" id="blog">Home</a>
+  <a href="http://127.0.0.1:5500/website/front.html" id="projects">Back</a>
+
+</div>
+
+<div style="margin-left:90px; margin-top: 160px;">
+  <h2>Few Glimpses of our memories , have a look on this SlideShow .</h2>
+  
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1/ 6</div>
+    <img src="s1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2/ 6</div>
+    <img src="s2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3/ 6</div>
+    <img src="s3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4/ 6</div>
+    <img src="s4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5/ 6</div>
+    <img src="s55.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6/ 6</div>
+    <img src="s6.jpg" style="width:100%">
+  </div>
+ 
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+4
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="s1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Just lean on my shoulders , everything will be fine!">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="s2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Presenting you my Everythingg ">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="s3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wanna hold you forever like this">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="s4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Most Precious n Prettiest Smile babyyy">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="s55.jpg" style="width:100%" onclick="currentSlide(5)" alt="Wifey version of My one n onlyy Pippooooo">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="s6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Watta day spent well">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+
+
+
+

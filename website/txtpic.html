@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glimpses of Love</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url(https://cdn141.picsart.com/253538868029202.jpg);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
+      
+      height: 145%;
+
+
+     
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  
+    .img1 {
+      background-image: url("t1.jpg");
+    }
+
+    .img2 {
+      background-image: url("t2.jpg");
+    }
+
+    .img3 {
+      background-image: url("t3.jpg");
+    }
+
+    .img4 {
+      background-image: url("t4.jpg");
+    }
+
+    .img5 {
+      background-image: url("t5.jpg");
+    }
+
+    .img6 {
+      background-image: url("t6.jpg");
+    }
+
+    .img7 {
+      background-image: url("t7.jpg");
+    }
+
+    .img8 {
+      background-image: url("t8.jpg");
+    }
+
+    
+    .img10 {
+      background-image: url("t10.jpg");
+    }
+
+    .img11 {
+      background-image: url("t11.jpg");
+    }
+
+    .img12 {
+      background-image: url("t12.jpg");
+    }
+
+    .img13 {
+      background-image: url("t13.jpg");
+    }
+
+    .img14 {
+      background-image: url("t14.jpg");
+    }
+
+    .img15 {
+      background-image: url("t15.jpg");
+    }
+
+    .img16 {
+      background-image: url("t16.jpg");
+    }
+
+   
+    .img18 {
+      background-image: url("t18.jpg");
+    }
+
+    .img19 {
+      background-image: url("t19.jpg");
+    }
+
+    .img20 {
+      background-image: url("t20.jpg");
+    }
+
+    
+    .img22 {
+      background-image: url("t22.jpg");
+    }
+
+    .img23 {
+      background-image: url("t23.jpg");
+    }
+
+    .img24 {
+      background-image: url("t24.jpg");
+    }
+
+    .img25 {
+      background-image: url("t25.jpg");
+    }
+
+    .img26 {
+      background-image: url("t26.jpg");
+    }
+
+    .img27 {
+      background-image: url("t27.jpg");
+    }
+
+    .img28 {
+      background-image: url("t28.jpg");
+    }
+
+    
+    .img30 {
+      background-image: url("t30.jpg");
+    }
+
+    .img31 {
+      background-image: url("t31.jpg");
+    }
+
+    .img32 {
+      background-image: url("t32.jpg");
+    }
+
+
+    
+    .bg-text {
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+     
+      color: white;
+      font-weight: bold;
+      font-size: 60px;
+      border: 8px solid #f1f1f1;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 300px;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .flip-box {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      border: 2px solid cornsilk;
+      border-radius: 5px;
+      perspective: 1000px;
+    }
+
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-box-front {
+      background-color: #bbb;
+      color: black;
+      background-size: contain;
+    }
+
+    .flip-box-back {
+      background-color: #555;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    #mySidenav a {
+      position: absolute;
+      left: -80px;
+      transition: 0.3s;
+      padding: 15px;
+      width: 100px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      border-radius: 0 5px 5px 0;
+    }
+
+    #mySidenav a:hover {
+      left: 0;
+    }
+
+    #about {
+      top: 20px;
+      background-color:indigo
+    }
+
+    #blog {
+      top: 80px;
+      background-color:darkred;
+    }
+
+    #projects {
+      top: 140px;
+      background-color:lawngreen;
+    }
+
+    #contact {
+      top: 200px;
+      background-color:#555;
+    }
+
+    .sidenav {
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="http://127.0.0.1:5500/website/front.html" target="_blank" id="blog">Home</a>
+    <a href="http://127.0.0.1:5500/website/front.html" id="projects">Back</a>
+  </div>
+
+
+  <div class="bg-image img1"></div>
+  <div class="bg-image img2"></div>
+  <div class="bg-image img3"></div>
+  <div class="bg-image img4"></div>
+  <div class="bg-image img5"></div>
+  <div class="bg-image img6"></div>
+  <div class="bg-image img7"></div>
+  <div class="bg-image img8"></div>
+  <!-- <div class="bg-image img9"></div>  -->
+  <div class="bg-image img10"></div>
+  <div class="bg-image img11"></div>
+  <div class="bg-image img12"></div>
+  <div class="bg-image img13"></div>
+  <div class="bg-image img14"></div>
+  <div class="bg-image img15"></div>
+  <div class="bg-image img16"></div>
+  <div class="bg-image img18"></div>
+  <div class="bg-image img19"></div>
+  <div class="bg-image img20"></div>
+  <div class="bg-image img22"></div>
+  <div class="bg-image img23"></div>
+  <div class="bg-image img24"></div>
+  <div class="bg-image img25"></div>
+  <div class="bg-image img26"></div>
+  <div class="bg-image img27"></div>
+  <div class="bg-image img28"></div>
+  <div class="bg-image img30"></div>
+  <div class="bg-image img31"></div>
+  <div class="bg-image img32"></div>
+
+
+
+  <div class="bg-text">LOVE U</div>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="f1.jpg" alt="Failed to load image" style="width:300px;height:300px">
+      </div>
+      <div class="flip-box-back">
+        <h2>LOVE YOU JAANUUU</h2>
+        <p>This just above pic is of two persons , One is Aadii & another one is his Strength , His Love , His Life
+          everything , and Your Birthday pic is  one of our Fav's .</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box" style="margin-left:300px;">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="f2.jpg" alt="Failed to load image" style="width:300px;height:300px">
+      </div>
+      <div class="flip-box-back">
+        <h2>LOVE YOU JAANUUU</h2>
+        <p> This pic of yours is just Stunning , your beauty is irrestible ....
+          This Girl is Mine Forever ...I Love you endlessly I Love you the mostt Pipppooooo</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="f3.jpg" alt="Failed to load image" style="width:300px;height:300px">
+      </div>
+      <div class="flip-box-back">
+        <h2>LOVE YOU JAANUUU</h2>
+        <p>This pic makes me go for self obsession ,uss din alg hi charm tha dono me, pics lene ki chahat bhi ....
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box" style="margin-left:300px;">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="f4.jpg" alt="Failed to load image" style="width:300px;height:300px">
+      </div>
+      <div class="flip-box-back">
+        <h2>LOVE YOU JAANUUU</h2>
+        <p>I was jealous that day , this is the bitter truth , 
+          when Aman said for ghibli , i was like i'll have first , i'll show you at irst then anyone else cann !!</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
